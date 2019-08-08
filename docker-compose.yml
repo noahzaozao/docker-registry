@@ -5,3 +5,6 @@ services:
     image: registry
     ports:
       - 5000:5000
+    volumes:
+      - ./registry_data:/var/lib/registry
+    restart: always
